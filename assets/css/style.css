@@ -1,0 +1,149 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@font-face {
+  font-family: "CMU Sans";
+  src: url("/assets/font/cmunss.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "CMU Sans";
+  src: url("/assets/font/cmunso.ttf") format("truetype");
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap; }
+@font-face {
+  font-family: "CMU Sans";
+  src: url("/assets/font/cmunsi.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: "CMU Sans";
+  src: url("/assets/font/cmunsx.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "CMU Typewriter Text";
+  src: url("/assets/font/cmuntt.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+body {
+  background-color: papayawhip;
+  font-family: "CMU Sans";
+  color: #360C03;
+  max-width: 40em;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.2; }
+
+img {
+  margin: auto;
+  display: block; }
+  img:not([width]) {
+    width: 75%;
+    max-width: 100%; }
+    @media (max-width: 768px) {
+      img:not([width]) {
+        width: 100%; } }
+
+em sup {
+  margin-left: 0.1em; }
+
+div.header {
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */ }
+  div.header img {
+    width: 150%; }
+
+div.rsvp {
+  text-align: center;
+  padding: 1em;
+  margin: 1em auto;
+  width: 15em;
+  background-color: #AAB4B4;
+  border-radius: 0.2em;
+  font-weight: bold; }
+  div.rsvp a {
+    color: #5F1405; }
+
+div.top {
+  text-align: center; }
+
+div.addr {
+  text-align: center; }
+
+h1 {
+  font-size: 4em;
+  margin: 0.5em 0 0 0; }
+
+h2 {
+  font-size: 2em;
+  padding-top: 1em; }
+
+code {
+  font-family: "CMU Typewriter Text"; }
+
+blockquote {
+  border-left: 0.2em solid #bbb;
+  margin-left: 0;
+  padding-left: 1em;
+  font-style: italic; }
+
+a {
+  color: #306FA6;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+thead {
+  display: none; }
+
+tr:first-child > td:first-child em {
+  padding: 0; }
+
+td:first-child {
+  min-width: 6em;
+  vertical-align: top;
+  padding-right: 1em; }
+  td:first-child em {
+    display: block;
+    text-align: left !important;
+    padding-top: 1em; }
+
+.stretch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; }
+
+.stretch div {
+  width: 100%;
+  text-align: center;
+  /* optional */
+  font-size: clamp(16px, 10vw, 64px);
+  /* min 16px, max 64px, scales with viewport width */ }
+
+.leaves {
+  display: block;
+  /* becomes its own line */
+  text-align: center;
+  /* center horizontally */ }
+
+.leaves::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("/assets/leaves.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: calc(2*1.512em);
+  /* preserve aspect ratio */
+  height: 2rem; }
+
+.ring img {
+  padding-top: 2em; }
